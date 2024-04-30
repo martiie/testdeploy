@@ -82,7 +82,6 @@ streamlit_webrtc
 sympy==1.12
 tenacity==8.2.3
 tensorboard
-tensorboard-data-serve
 tensorflow
 tensorflow-intel
 tensorflow-io-gcs-filesystem
