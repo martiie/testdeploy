@@ -22,7 +22,7 @@ engine = Engine(videocap=0, show=True, custom_objects=[facenet, FPSmetric()])
 
 def callback(frame):
     img = frame.to_ndarray(format="bgr24")
-    img = engine.custom_processing(engine.flip(img))
+    #img = engine.custom_processing(engine.flip(img))
     return av.VideoFrame.from_ndarray(img, format="bgr24")
 
 webrtc_streamer(key="example", video_frame_callback=callback)
