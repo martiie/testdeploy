@@ -48,8 +48,9 @@ namex==0.0.8
 numpy==1.26.4
 onnx==1.16.0
 onnxruntime==1.17.3
-opencv-contrib-python==4.9.0.80
-opencv-python==4.9.0.80
+opencv-python-headless
+opencv_contrib_python
+opencv-python
 opt-einsum==3.3.0
 optree==0.11.0
 packaging==24.0
