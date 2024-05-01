@@ -16,7 +16,7 @@ facenet = FaceNet(
         onnx_model_path = "models/faceNet.onnx", 
         anchors = "faces",
         force_cpu = True,
-        threshold=0.3,
+        threshold=0.15,
     )
 engine = Engine(videocap=0, show=True, custom_objects=[facenet, FPSmetric()])
 
