@@ -10,13 +10,13 @@ warnings.filterwarnings("ignore")
 import pandas as pd
 
 st.title("My first Streamlit app")
-st.write("Hello, Phithak")
+st.write("Hello, People")
 facenet = FaceNet(
         detector = MPFaceDetection(),
         onnx_model_path = "models/faceNet.onnx", 
         anchors = "faces",
         force_cpu = True,
-        threshold=0.15,
+        threshold=0.20,
     )
 engine = Engine(videocap=0, show=True, custom_objects=[facenet, FPSmetric()])
 
@@ -32,4 +32,4 @@ webrtc_streamer(
     rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
 )
 
-st.write("Hello, TOP")
+st.write("อุอิ")
